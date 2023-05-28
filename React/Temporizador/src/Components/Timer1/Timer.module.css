@@ -1,22 +1,17 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .container {
   height: 300px;
-  background-color: ghostwhite;
+  background-color: beige;
   width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  margin: 1rem;
 }
 
 .divButton {
-  width: 100px;
+  width: 200px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -26,7 +21,7 @@ body {
   color: white;
   border: none;
   padding: 8px;
-  width: 40px;
+  width: auto;
   border-radius: 5px;
   cursor: pointer;
 }
