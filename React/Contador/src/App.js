@@ -1,29 +1,11 @@
-import "./App.css";
-import { useState } from "react";
+import Counter from "./components/Counter/Counter";
+import CounterRedux from "./components/CounterRedux/CounterRedux";
 
 function App() {
-  const [counter, setCounter] = useState(0);
-
-  const handleClickIncrease = () => {
-    setCounter(counter + 1);
-  };
-
-  const handleClickDecrease = () => {
-    if (counter > 0) {
-      setCounter(counter - 1);
-    }
-  };
-
   return (
-    <div className="container">
-      <h1>Contador</h1>
-      <p>
-        <strong>{counter}</strong>
-      </p>
-      <div className="divButton">
-        <button onClick={handleClickIncrease}>+</button>
-        <button onClick={handleClickDecrease}>-</button>
-      </div>
+    <div>
+      <Counter />
+      <CounterRedux />
     </div>
   );
 }
